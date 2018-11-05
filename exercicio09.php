@@ -1,12 +1,15 @@
 <?php
 
-echo "Crie uma programa em PHP que conte de 5.000 a 5.543<br/><br/><br/>";
+echo "Informado um número inicial,um número final e um numéro Y.<br/>
+ Imprima apenas os números que são divisíveis pelo número Y no intervalo compreendido entre número inicial e número final.";
+ $y = 137;
+ $x = 9;
+ $z = 13;
 
-for($i=5000;$i<= 5543;$i++){
-    if($i%2){
-        echo "{$i} - impar ";  
-    }else{
-        echo "{$i} - par ";  
+ echo "<br/> numeros que são divisiveis por {$z} de {$x} até {$y}<br/>";
+
+for($i=$x;$i<= $y;$i++){
+    if(!($i%$z)){
+        echo "{$i} - divisivel <br/>";  
     }
-    echo "</br>";
 }
