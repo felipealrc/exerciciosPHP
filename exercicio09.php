@@ -9,7 +9,7 @@ echo "Informado um número inicial,um número final e um numéro Y.<br/>
  echo "<br/> numeros que são divisiveis por {$z} de {$x} até {$y}<br/>";
 
 for($i=$x;$i<= $y;$i++){
-    if(!($i%$z)){
+    if(($i%$z)===0){
         echo "{$i} - divisivel <br/>";  
     }
 }
